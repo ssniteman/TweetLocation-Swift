@@ -16,6 +16,7 @@
 		604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */; };
 		604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */; };
 		604ACECF19C734AD00028A57 /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECE19C734AD00028A57 /* NewLocationViewController.swift */; };
+		604ACED119C73A4D00028A57 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACED019C73A4D00028A57 /* LocationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationsViewController.swift; sourceTree = "<group>"; };
 		604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocationsTableViewController.swift; sourceTree = "<group>"; };
 		604ACECE19C734AD00028A57 /* NewLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
+		604ACED019C73A4D00028A57 /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */,
 				604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */,
 				604ACECE19C734AD00028A57 /* NewLocationViewController.swift */,
+				604ACED019C73A4D00028A57 /* LocationData.swift */,
 			);
 			path = Loweet;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604ACED119C73A4D00028A57 /* LocationData.swift in Sources */,
 				604ACEC919C7219D00028A57 /* TweetLocationTableViewCell.swift in Sources */,
 				604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */,
 				604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */,

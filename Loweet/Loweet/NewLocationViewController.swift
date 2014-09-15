@@ -7,14 +7,57 @@
 //
 
 import UIKit
+import CoreLocation
 
-class NewLocationViewController: UIViewController {
+class NewLocationViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    
+    @IBOutlet weak var tweetTextView: UITextView!
+    
+    let locationManager = CLLocationManager()
+    
+    var currentCoordinate: CLLocationCoordinate2D!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        
+        locationManager.distanceFilter = 50
+        
+        locationManager.startUpdatingLocation()
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
+        for location in locations {
+            
+            currentCoordinate = (location as CLLocation).coordinate
+            
+            
+        }
+        
+    }
+    
+    
+    
+    @IBAction func saveNewLocation(sender: AnyObject) {
+        
+        
+        
+        
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
