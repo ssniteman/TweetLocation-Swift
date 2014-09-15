@@ -12,6 +12,9 @@
 		604ACEB019C71CE500028A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEAF19C71CE500028A57 /* Images.xcassets */; };
 		604ACEB319C71CE500028A57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEB119C71CE500028A57 /* LaunchScreen.xib */; };
 		604ACEBF19C71CE500028A57 /* LoweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEBE19C71CE500028A57 /* LoweetTests.swift */; };
+		604ACEC919C7219D00028A57 /* TweetLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEC819C7219D00028A57 /* TweetLocationTableViewCell.swift */; };
+		604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */; };
+		604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		604ACEB819C71CE500028A57 /* LoweetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoweetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		604ACEBD19C71CE500028A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604ACEBE19C71CE500028A57 /* LoweetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoweetTests.swift; sourceTree = "<group>"; };
+		604ACEC819C7219D00028A57 /* TweetLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocationTableViewCell.swift; sourceTree = "<group>"; };
+		604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationsViewController.swift; sourceTree = "<group>"; };
+		604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocationsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				604ACEAF19C71CE500028A57 /* Images.xcassets */,
 				604ACEB119C71CE500028A57 /* LaunchScreen.xib */,
 				604ACEA419C71CE500028A57 /* Supporting Files */,
+				604ACEC819C7219D00028A57 /* TweetLocationTableViewCell.swift */,
+				604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */,
+				604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */,
 			);
 			path = Loweet;
 			sourceTree = "<group>";
@@ -209,6 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604ACEC919C7219D00028A57 /* TweetLocationTableViewCell.swift in Sources */,
+				604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */,
+				604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */,
 				604ACEA719C71CE500028A57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
