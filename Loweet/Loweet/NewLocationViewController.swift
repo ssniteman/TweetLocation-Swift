@@ -23,39 +23,41 @@ class NewLocationViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        println(CLLocationManager.authorizationStatus().hashValue)
         
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        
-        locationManager.distanceFilter = 50
-        
-        locationManager.startUpdatingLocation()
-        
+        if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.NotDetermined {
+            
+            locationManager.requestWhenInUseAuthorization()
+        }
+
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func saveNewLocation(sender: AnyObject) {
+        
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.distanceFilter = 50
+        locationManager.startUpdatingLocation()
+        
+    }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
+        println("find")
         
         for location in locations {
             
             currentCoordinate = (location as CLLocation).coordinate
             
+            println(currentCoordinate)
+            
             
         }
         
     }
-    
-    
-    
-    @IBAction func saveNewLocation(sender: AnyObject) {
-        
-        
-        
-        
-    }
-    
     
     
 
