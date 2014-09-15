@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		604ACEA719C71CE500028A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEA619C71CE500028A57 /* AppDelegate.swift */; };
+		604ACEA919C71CE500028A57 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEA819C71CE500028A57 /* FirstViewController.swift */; };
+		604ACEAB19C71CE500028A57 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEAA19C71CE500028A57 /* SecondViewController.swift */; };
+		604ACEAE19C71CE500028A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEAC19C71CE500028A57 /* Main.storyboard */; };
+		604ACEB019C71CE500028A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEAF19C71CE500028A57 /* Images.xcassets */; };
+		604ACEB319C71CE500028A57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEB119C71CE500028A57 /* LaunchScreen.xib */; };
+		604ACEBF19C71CE500028A57 /* LoweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEBE19C71CE500028A57 /* LoweetTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		604ACEB919C71CE500028A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604ACE9919C71CE500028A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 604ACEA019C71CE500028A57;
+			remoteInfo = Loweet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		604ACEA119C71CE500028A57 /* Loweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		604ACEA519C71CE500028A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604ACEA619C71CE500028A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		604ACEA819C71CE500028A57 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		604ACEAA19C71CE500028A57 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		604ACEAD19C71CE500028A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		604ACEAF19C71CE500028A57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		604ACEB219C71CE500028A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		604ACEB819C71CE500028A57 /* LoweetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoweetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		604ACEBD19C71CE500028A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604ACEBE19C71CE500028A57 /* LoweetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoweetTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		604ACE9E19C71CE500028A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604ACEB519C71CE500028A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		604ACE9819C71CE500028A57 = {
+			isa = PBXGroup;
+			children = (
+				604ACEA319C71CE500028A57 /* Loweet */,
+				604ACEBB19C71CE500028A57 /* LoweetTests */,
+				604ACEA219C71CE500028A57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		604ACEA219C71CE500028A57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				604ACEA119C71CE500028A57 /* Loweet.app */,
+				604ACEB819C71CE500028A57 /* LoweetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		604ACEA319C71CE500028A57 /* Loweet */ = {
+			isa = PBXGroup;
+			children = (
+				604ACEA619C71CE500028A57 /* AppDelegate.swift */,
+				604ACEA819C71CE500028A57 /* FirstViewController.swift */,
+				604ACEAA19C71CE500028A57 /* SecondViewController.swift */,
+				604ACEAC19C71CE500028A57 /* Main.storyboard */,
+				604ACEAF19C71CE500028A57 /* Images.xcassets */,
+				604ACEB119C71CE500028A57 /* LaunchScreen.xib */,
+				604ACEA419C71CE500028A57 /* Supporting Files */,
+			);
+			path = Loweet;
+			sourceTree = "<group>";
+		};
+		604ACEA419C71CE500028A57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				604ACEA519C71CE500028A57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		604ACEBB19C71CE500028A57 /* LoweetTests */ = {
+			isa = PBXGroup;
+			children = (
+				604ACEBE19C71CE500028A57 /* LoweetTests.swift */,
+				604ACEBC19C71CE500028A57 /* Supporting Files */,
+			);
+			path = LoweetTests;
+			sourceTree = "<group>";
+		};
+		604ACEBC19C71CE500028A57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				604ACEBD19C71CE500028A57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		604ACEA019C71CE500028A57 /* Loweet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604ACEC219C71CE500028A57 /* Build configuration list for PBXNativeTarget "Loweet" */;
+			buildPhases = (
+				604ACE9D19C71CE500028A57 /* Sources */,
+				604ACE9E19C71CE500028A57 /* Frameworks */,
+				604ACE9F19C71CE500028A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loweet;
+			productName = Loweet;
+			productReference = 604ACEA119C71CE500028A57 /* Loweet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		604ACEB719C71CE500028A57 /* LoweetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604ACEC519C71CE500028A57 /* Build configuration list for PBXNativeTarget "LoweetTests" */;
+			buildPhases = (
+				604ACEB419C71CE500028A57 /* Sources */,
+				604ACEB519C71CE500028A57 /* Frameworks */,
+				604ACEB619C71CE500028A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				604ACEBA19C71CE500028A57 /* PBXTargetDependency */,
+			);
+			name = LoweetTests;
+			productName = LoweetTests;
+			productReference = 604ACEB819C71CE500028A57 /* LoweetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		604ACE9919C71CE500028A57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Shane Sniteman";
+				TargetAttributes = {
+					604ACEA019C71CE500028A57 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					604ACEB719C71CE500028A57 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 604ACEA019C71CE500028A57;
+					};
+				};
+			};
+			buildConfigurationList = 604ACE9C19C71CE500028A57 /* Build configuration list for PBXProject "Loweet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 604ACE9819C71CE500028A57;
+			productRefGroup = 604ACEA219C71CE500028A57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				604ACEA019C71CE500028A57 /* Loweet */,
+				604ACEB719C71CE500028A57 /* LoweetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		604ACE9F19C71CE500028A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604ACEAE19C71CE500028A57 /* Main.storyboard in Resources */,
+				604ACEB319C71CE500028A57 /* LaunchScreen.xib in Resources */,
+				604ACEB019C71CE500028A57 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604ACEB619C71CE500028A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		604ACE9D19C71CE500028A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604ACEAB19C71CE500028A57 /* SecondViewController.swift in Sources */,
+				604ACEA719C71CE500028A57 /* AppDelegate.swift in Sources */,
+				604ACEA919C71CE500028A57 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604ACEB419C71CE500028A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604ACEBF19C71CE500028A57 /* LoweetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		604ACEBA19C71CE500028A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 604ACEA019C71CE500028A57 /* Loweet */;
+			targetProxy = 604ACEB919C71CE500028A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		604ACEAC19C71CE500028A57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				604ACEAD19C71CE500028A57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		604ACEB119C71CE500028A57 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				604ACEB219C71CE500028A57 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		604ACEC019C71CE500028A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		604ACEC119C71CE500028A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		604ACEC319C71CE500028A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Loweet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		604ACEC419C71CE500028A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Loweet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		604ACEC619C71CE500028A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoweetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loweet.app/Loweet";
+			};
+			name = Debug;
+		};
+		604ACEC719C71CE500028A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoweetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loweet.app/Loweet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		604ACE9C19C71CE500028A57 /* Build configuration list for PBXProject "Loweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604ACEC019C71CE500028A57 /* Debug */,
+				604ACEC119C71CE500028A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		604ACEC219C71CE500028A57 /* Build configuration list for PBXNativeTarget "Loweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604ACEC319C71CE500028A57 /* Debug */,
+				604ACEC419C71CE500028A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		604ACEC519C71CE500028A57 /* Build configuration list for PBXNativeTarget "LoweetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604ACEC619C71CE500028A57 /* Debug */,
+				604ACEC719C71CE500028A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 604ACE9919C71CE500028A57 /* Project object */;
+}
