@@ -15,6 +15,7 @@
 		604ACEC919C7219D00028A57 /* TweetLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEC819C7219D00028A57 /* TweetLocationTableViewCell.swift */; };
 		604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */; };
 		604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */; };
+		604ACECF19C734AD00028A57 /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACECE19C734AD00028A57 /* NewLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		604ACEC819C7219D00028A57 /* TweetLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocationTableViewCell.swift; sourceTree = "<group>"; };
 		604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationsViewController.swift; sourceTree = "<group>"; };
 		604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocationsTableViewController.swift; sourceTree = "<group>"; };
+		604ACECE19C734AD00028A57 /* NewLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				604ACEC819C7219D00028A57 /* TweetLocationTableViewCell.swift */,
 				604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */,
 				604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */,
+				604ACECE19C734AD00028A57 /* NewLocationViewController.swift */,
 			);
 			path = Loweet;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				604ACEC919C7219D00028A57 /* TweetLocationTableViewCell.swift in Sources */,
 				604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */,
 				604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */,
+				604ACECF19C734AD00028A57 /* NewLocationViewController.swift in Sources */,
 				604ACEA719C71CE500028A57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
