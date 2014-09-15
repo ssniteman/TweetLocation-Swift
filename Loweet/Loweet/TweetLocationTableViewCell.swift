@@ -10,6 +10,17 @@ import UIKit
 
 class TweetLocationTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    @IBOutlet weak var tweetTextView: UITextView!
+    
+    
+    @IBAction func editTweetLocation(sender: AnyObject) {
+    }
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
