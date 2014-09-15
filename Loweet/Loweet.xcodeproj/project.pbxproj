@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		604ACEA719C71CE500028A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEA619C71CE500028A57 /* AppDelegate.swift */; };
-		604ACEA919C71CE500028A57 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEA819C71CE500028A57 /* FirstViewController.swift */; };
-		604ACEAB19C71CE500028A57 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604ACEAA19C71CE500028A57 /* SecondViewController.swift */; };
 		604ACEAE19C71CE500028A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEAC19C71CE500028A57 /* Main.storyboard */; };
 		604ACEB019C71CE500028A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEAF19C71CE500028A57 /* Images.xcassets */; };
 		604ACEB319C71CE500028A57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604ACEB119C71CE500028A57 /* LaunchScreen.xib */; };
@@ -30,8 +28,6 @@
 		604ACEA119C71CE500028A57 /* Loweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604ACEA519C71CE500028A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604ACEA619C71CE500028A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		604ACEA819C71CE500028A57 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		604ACEAA19C71CE500028A57 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		604ACEAD19C71CE500028A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		604ACEAF19C71CE500028A57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		604ACEB219C71CE500028A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				604ACEA619C71CE500028A57 /* AppDelegate.swift */,
-				604ACEA819C71CE500028A57 /* FirstViewController.swift */,
-				604ACEAA19C71CE500028A57 /* SecondViewController.swift */,
 				604ACEAC19C71CE500028A57 /* Main.storyboard */,
 				604ACEAF19C71CE500028A57 /* Images.xcassets */,
 				604ACEB119C71CE500028A57 /* LaunchScreen.xib */,
@@ -215,9 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				604ACEAB19C71CE500028A57 /* SecondViewController.swift in Sources */,
 				604ACEA719C71CE500028A57 /* AppDelegate.swift in Sources */,
-				604ACEA919C71CE500028A57 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +401,7 @@
 				604ACEC419C71CE500028A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		604ACEC519C71CE500028A57 /* Build configuration list for PBXNativeTarget "LoweetTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +410,7 @@
 				604ACEC719C71CE500028A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
