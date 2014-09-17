@@ -50,6 +50,7 @@
 		60CA2AD919C9C18B0092809B /* SwifterTrends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA2ABB19C9C18B0092809B /* SwifterTrends.swift */; };
 		60CA2ADA19C9C18B0092809B /* SwifterTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA2ABC19C9C18B0092809B /* SwifterTweets.swift */; };
 		60CA2ADB19C9C18B0092809B /* SwifterUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA2ABD19C9C18B0092809B /* SwifterUsers.swift */; };
+		60D37D7E19C9E23C006FB596 /* FoundLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D37D7D19C9E23C006FB596 /* FoundLocationsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		60CA2ABB19C9C18B0092809B /* SwifterTrends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterTrends.swift; sourceTree = "<group>"; };
 		60CA2ABC19C9C18B0092809B /* SwifterTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterTweets.swift; sourceTree = "<group>"; };
 		60CA2ABD19C9C18B0092809B /* SwifterUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterUsers.swift; sourceTree = "<group>"; };
+		60D37D7D19C9E23C006FB596 /* FoundLocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundLocationsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				604ACECA19C721BE00028A57 /* MapLocationsViewController.swift */,
 				604ACECC19C721E800028A57 /* TweetLocationsTableViewController.swift */,
 				604ACECE19C734AD00028A57 /* NewLocationViewController.swift */,
+				60D37D7D19C9E23C006FB596 /* FoundLocationsTableViewController.swift */,
 				604ACED019C73A4D00028A57 /* LocationData.swift */,
 				605297D619C7704A0016BFD0 /* Marker.swift */,
 				604ACEAF19C71CE500028A57 /* Images.xcassets */,
@@ -496,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				604ACED119C73A4D00028A57 /* LocationData.swift in Sources */,
+				60D37D7E19C9E23C006FB596 /* FoundLocationsTableViewController.swift in Sources */,
 				604ACEC919C7219D00028A57 /* TweetLocationTableViewCell.swift in Sources */,
 				604ACECB19C721BE00028A57 /* MapLocationsViewController.swift in Sources */,
 				604ACECD19C721E900028A57 /* TweetLocationsTableViewController.swift in Sources */,
@@ -844,6 +848,7 @@
 				60CA2A5E19C9C0D30092809B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60CA2A6319C9C0D30092809B /* Build configuration list for PBXNativeTarget "SwifteriOSTests" */ = {
 			isa = XCConfigurationList;
@@ -852,6 +857,7 @@
 				60CA2A6019C9C0D30092809B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

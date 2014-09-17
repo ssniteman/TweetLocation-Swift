@@ -31,6 +31,7 @@ let _locationData: LocationData = {
 class LocationData: NSObject, CLLocationManagerDelegate {
     
     var tweetLocations: [[String:AnyObject]] = []
+    var foundLocations: [[String:AnyObject]] = []
     
     
     class func mainData() -> LocationData {
@@ -61,6 +62,8 @@ class LocationData: NSObject, CLLocationManagerDelegate {
         
         self.locationManager.delegate = self
         
+        self.locationManager.distanceFilter = 40.0
+        
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -80,6 +83,19 @@ class LocationData: NSObject, CLLocationManagerDelegate {
                 
                 println(distance1)
                 println(distance2)
+                
+                println(location.coordinate.latitude)
+                println(location.coordinate.longitude)
+                println(tweetLocationPoint.coordinate.latitude)
+                println(tweetLocationPoint.coordinate.longitude)
+                
+                if distance2 < 50.0 {
+                    
+                    // post tweet
+                    
+                    // what was the last time I tweeted the same point
+                    
+                }
             }
         
         }
