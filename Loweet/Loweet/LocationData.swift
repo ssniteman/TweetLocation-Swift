@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwifteriOS
+//import SwifteriOS
 import CoreLocation
 
 
@@ -28,15 +28,12 @@ let _locationData: LocationData = {
     
 }()
 
-
 class LocationData: NSObject, CLLocationManagerDelegate {
     
     var tweetLocations: [[String:AnyObject]] = []
     
     
     class func mainData() -> LocationData {
-     
-        
         
         return _locationData
     }
@@ -74,12 +71,15 @@ class LocationData: NSObject, CLLocationManagerDelegate {
             
             for tweetLocation in self.tweetLocations {
             
-                var tweetLocationPoint = CLLocation(latitude: tweetLocation["latitude"] as CLLocationDegrees,
-                    longitude: tweetLocation["longitude"] as CLLocationDegrees)
+                var tweetLocationPoint = CLLocation(latitude: tweetLocation["latitude"]! as CLLocationDegrees,
+                    longitude: tweetLocation["longitude"]! as CLLocationDegrees)
                 
-                location.distanceFromLocation()
+                var distance1 = location.distanceFromLocation(tweetLocationPoint)
                 
+                var distance2 = self.checkDistanceBetweenLocations(location, location2: tweetLocationPoint)
                 
+                println(distance1)
+                println(distance2)
             }
         
         }
@@ -90,8 +90,7 @@ class LocationData: NSObject, CLLocationManagerDelegate {
     
     func checkDistanceBetweenLocations (location1: CLLocation, location2: CLLocation) -> Double {
         
-        
-        
+
         let DEG_TO_RAD = 0.017453292519943295769236907684886
         let EARTH_RADIUS_IN_METERS = 6372797.560856
         
@@ -100,7 +99,7 @@ class LocationData: NSObject, CLLocationManagerDelegate {
         
         var latitudeH = sin(latitudeArc * 0.5)
         
-        latitudeH *= latitudeH;
+        latitudeH *= latitudeH
         
         var longitudeH = sin(longitudeArc * 0.5)
         
@@ -108,8 +107,7 @@ class LocationData: NSObject, CLLocationManagerDelegate {
         
         let tmp = cos(location1.coordinate.latitude * DEG_TO_RAD) * cos(location2.coordinate.latitude * DEG_TO_RAD)
         
-        return EARTH_RADIUS_IN_METERS * 2.0 * asin( sqrt( latitudeH + tmp * longitudeH ) )
-        
+        return EARTH_RADIUS_IN_METERS * 2.0 * asin(sqrt(latitudeH + tmp * longitudeH))
         
     }
 

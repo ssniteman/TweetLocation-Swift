@@ -38,14 +38,14 @@ class TweetLocationsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return LocationData.mainData().locations.count
+        return LocationData.mainData().tweetLocations.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("tweetLocationCell", forIndexPath: indexPath) as TweetLocationTableViewCell
         
-        var tweetLocation = LocationData.mainData().locations[indexPath.row]
+        var tweetLocation = LocationData.mainData().tweetLocations[indexPath.row]
         
         if let tweet: AnyObject = tweetLocation["tweet"] {
             

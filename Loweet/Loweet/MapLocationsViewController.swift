@@ -41,7 +41,7 @@ class MapLocationsViewController: UIViewController {
         
         self.locationsMapView.removeAnnotations(self.locationsMapView.annotations)
         
-        for location in LocationData.mainData().locations {
+        for location in LocationData.mainData().tweetLocations {
             
             var marker = Marker()
             
