@@ -29,7 +29,13 @@ class NewLocationViewController: UIViewController, CLLocationManagerDelegate {
             
             locationManager.requestWhenInUseAuthorization()
         }
+        
+        locationManager.delegate = self
+//        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+//        locationManager.distanceFilter = 50
+        locationManager.startUpdatingLocation()
 
+        println("load")
 
         // Do any additional setup after loading the view.
     }
@@ -37,10 +43,14 @@ class NewLocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func saveNewLocation(sender: AnyObject) {
         
         
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager.distanceFilter = 50
-        locationManager.startUpdatingLocation()
+        LocationData.mainData().addLocation([
+            
+            "latitude" : self.currentCoordinate.latitude,
+            "longitude" : self.currentCoordinate.longitude,
+            "tweet" : self.tweetTextView.text
+            
+            ])
+  
         
     }
     
@@ -52,13 +62,12 @@ class NewLocationViewController: UIViewController, CLLocationManagerDelegate {
             
             currentCoordinate = (location as CLLocation).coordinate
             
-            println(currentCoordinate)
-            
+            println(currentCoordinate.latitude)
+           
             
         }
         
     }
-    
     
 
     override func didReceiveMemoryWarning() {
@@ -66,7 +75,6 @@ class NewLocationViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

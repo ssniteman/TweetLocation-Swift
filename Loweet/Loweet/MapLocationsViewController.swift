@@ -21,12 +21,44 @@ class MapLocationsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let nc = NSNotificationCenter.defaultCenter()
+        
+        nc.addObserverForName("tweetLocationUpdated", object: nil, queue: NSOperationQueue.mainQueue()) { (notification: NSNotification!) -> Void in
+            
+            self.markUpTheMap()
+        
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func markUpTheMap() {
+        
+        self.locationsMapView.removeAnnotations(self.locationsMapView.annotations)
+        
+        for location in LocationData.mainData().locations {
+            
+            var marker = Marker()
+            
+            var coordinate = CLLocationCoordinate2D(latitude: location["latitude"]! as CLLocationDegrees, longitude: location["longitude"]! as CLLocationDegrees)
+            
+            marker.setCoordinate(coordinate)
+            
+            self.locationsMapView.addAnnotation(marker)
+            
+        }
+        
+    }
+    
+    
+    
+    
+    
     
 
     /*

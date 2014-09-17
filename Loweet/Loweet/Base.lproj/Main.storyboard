@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -16,43 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bxA-EY-Mea">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="16" y="-11" width="600" height="600"/>
-                                </variation>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s4J-eR-UbT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bxA-EY-Mea" secondAttribute="bottom" id="8bJ-oL-g9S"/>
-                            <constraint firstAttribute="trailing" secondItem="bxA-EY-Mea" secondAttribute="trailing" id="CsL-lU-MZ6"/>
-                            <constraint firstItem="bxA-EY-Mea" firstAttribute="top" secondItem="wfr-d5-z22" secondAttribute="top" id="OoQ-9o-MFt"/>
-                            <constraint firstItem="bxA-EY-Mea" firstAttribute="leading" secondItem="wfr-d5-z22" secondAttribute="leading" id="qGi-1i-CCG"/>
+                            <constraint firstAttribute="trailing" secondItem="s4J-eR-UbT" secondAttribute="trailing" id="FMY-9i-SfH"/>
+                            <constraint firstItem="s4J-eR-UbT" firstAttribute="leading" secondItem="wfr-d5-z22" secondAttribute="leading" id="MLV-NM-t3S"/>
+                            <constraint firstItem="s4J-eR-UbT" firstAttribute="top" secondItem="wfr-d5-z22" secondAttribute="top" id="gNy-2K-jJl"/>
+                            <constraint firstAttribute="bottom" secondItem="s4J-eR-UbT" secondAttribute="bottom" id="wun-Gq-18q"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="bxA-EY-Mea"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="8bJ-oL-g9S"/>
-                                <exclude reference="CsL-lU-MZ6"/>
-                                <exclude reference="OoQ-9o-MFt"/>
-                                <exclude reference="qGi-1i-CCG"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="bxA-EY-Mea"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="8bJ-oL-g9S"/>
-                                <include reference="CsL-lU-MZ6"/>
-                                <include reference="OoQ-9o-MFt"/>
-                                <include reference="qGi-1i-CCG"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="locationsMapView" destination="s4J-eR-UbT" id="yqq-1E-O9i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ez3-wv-vXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,32 +50,40 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZUA-Vp-n0m" id="m0q-6Q-D1k">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHA-3t-imA">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ais-Gg-UBm">
+                                            <rect key="frame" x="517" y="13" width="30" height="30"/>
+                                            <state key="normal" title="Edit">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="editTweetLocation:" destination="ZUA-Vp-n0m" eventType="touchUpInside" id="v5H-cA-tXy"/>
+                                            </connections>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XZ-yA-WHf">
+                                            <rect key="frame" x="35" y="32" width="300" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <variation key="widthClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="15" y="37" width="300" height="50"/>
+                                            </variation>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4O-N4-5Zh">
+                                            <rect key="frame" x="15" y="8" width="67" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="13" y="8" width="67" height="21"/>
+                                                <rect key="frame" x="23" y="8" width="67" height="21"/>
                                             </variation>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-nM-uLW">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="29" width="384" height="63"/>
-                                            </variation>
-                                        </textView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-6C-pMj">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <state key="normal" title="Edit">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="337" y="3" width="30" height="30"/>
+                                                <rect key="frame" x="337" y="8" width="30" height="30"/>
                                             </variation>
                                             <connections>
                                                 <action selector="editTweetLocation:" destination="ZUA-Vp-n0m" eventType="touchUpInside" id="mGc-99-rLy"/>
@@ -106,22 +92,18 @@
                                     </subviews>
                                     <variation key="default">
                                         <mask key="subviews">
-                                            <exclude reference="aHA-3t-imA"/>
-                                            <exclude reference="H7b-nM-uLW"/>
                                             <exclude reference="Bju-6C-pMj"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=regular">
                                         <mask key="subviews">
-                                            <include reference="aHA-3t-imA"/>
-                                            <include reference="H7b-nM-uLW"/>
                                             <include reference="Bju-6C-pMj"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="locationLabel" destination="aHA-3t-imA" id="K9e-mR-rfQ"/>
-                                    <outlet property="tweetTextView" destination="H7b-nM-uLW" id="YtY-gd-FmC"/>
+                                    <outlet property="locationLabel" destination="q4O-N4-5Zh" id="6u8-YE-cWQ"/>
+                                    <outlet property="tweetTextView" destination="2XZ-yA-WHf" id="5Lw-7h-jpK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -172,12 +154,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-ib-2iC">
-                                <rect key="frame" x="56" y="103" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzi-tJ-Aep">
                                 <rect key="frame" x="56" y="252" width="46" height="30"/>
                                 <state key="normal" title="Button">
@@ -187,6 +163,12 @@
                                     <action selector="saveNewLocation:" destination="nIo-kX-Ge8" eventType="touchUpInside" id="oXG-6x-tXK"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-ib-2iC">
+                                <rect key="frame" x="56" y="103" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
